@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
         <style>
             * {
                 margin: 0;
@@ -9,7 +24,7 @@
             }
             @font-face {
                 font-family: 'arcade';
-                src: url('../font/arcade.ttf') format('truetype');
+                src: url('../font/ARCADE_N.ttf') format('truetype');
                 font-weight: normal;
                 font-style: normal; 
             }
@@ -58,10 +73,8 @@
                 text-decoration: none;
             }
             button {
-                width: 200px;
-                height: 98px;
                 background-image: url('../image/money.jpg');
-                background-size: cover;
+                background-size: contain;
                 text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
             }
         </style>
@@ -73,7 +86,7 @@
         <div class="button-container">
             <a href="start.html"><button class="start">START</button></a>
             <a href="../process/rank"><button class="rank">RANK</button></a>
-            <a href="script.html"><button class="script">SCRIPT</button></a>
+            <a href="script.html"><button class="script">HOW TO PLAY</button></a>
         </div>
         <audio loop id="audio">
             <source id="audioSource">

@@ -19,6 +19,7 @@ app.use('/image', static(path.join(__dirname, 'image')))
 app.use('/gif', static(path.join(__dirname, 'gif')))
 app.use('/font', static(path.join(__dirname, 'font')))
 app.use('/sound', static(path.join(__dirname, 'sound')))
+app.use('/favicon', static(path.join(__dirname, 'favicon')))
 
 app.set('view engine', 'ejs');
 
@@ -70,7 +71,7 @@ function createUserSchema() {
         return this.find({}, callback)
     })
     UserSchema.static('findByCoin', function(callback) {
-        return this.find({sort: {"coin": -1}, "limit": 5}, callback)
+        return this.find({}).sort({coin: -1}).exec(callback)
     })
 
     UserModel = mongoose.model("alibabas", UserSchema)
